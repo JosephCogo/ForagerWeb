@@ -33,13 +33,9 @@ $( document ).ready( function(){
 			open=false;
 			$("#fruit-list").css("display", "none");
 		}
-		//$(".background").fadeTo(500, 0, function(){
-			//$(".background").css("background-image",  "url('blackberries.jpg')");
-			//$(".background").fadeTo(500, 1);
-		//});
 	});
 
-		$("#more-recipes").click(function(){
+	$("#more-recipes").click(function(){
 		if(recipes == false){
 			recipes = true;
 			$("#recipe-list").fadeTo(0, 1, function(){});
@@ -48,9 +44,13 @@ $( document ).ready( function(){
 			recipes=false;
 			$("#recipe-list").css("display", "none");
 		}
-		//$(".background").fadeTo(500, 0, function(){
-			//$(".background").css("background-image",  "url('blackberries.jpg')");
-			//$(".background").fadeTo(500, 1);
-		//});
+
+	});
+
+	$("#map").click(function(){
+		$(".background").fadeTo(500, 0, function(){
+			$(".background").css("background-image",  "url('blackberries.jpg')");
+			$(".background").fadeTo(500, 1);
+		});
 	});
 });
