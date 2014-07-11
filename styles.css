@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'BebasNeue'; /*a name to be used later*/
+    src: url('Bebas/BebasNeue Light.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'BebasNeueBook'; /*a name to be used later*/
+    src: url('Bebas/BebasNeue Book.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'BebasNeueReg'; /*a name to be used later*/
+    src: url('Bebas/BebasNeue Regular.ttf'); /*URL to font*/
+}
+
+body, html, h1{
+    width : 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'BebasNeue';
+    font-weight: 300;
+}
+
+li{
+    width: auto; 
+}
+
+.content{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 2000px;
+}
+
+.background{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    /*or 800/900*/
+    height: 1000px;
+    left: 0px;
+    background-color: rgba(255,255,255,0);
+    background-image: url("figs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -100px -250px;
+}
+
+.in > h1{
+    font-family: "BebasNeueReg";
+    font-size: 80px;
+    left: 20px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.in > ul{
+    margin: 5px 0 -2px 0;
+    display: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    list-style-type: none;
+    list-style: none;
+}
+
+.in{
+    width: 100%;
+    top : 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    height: 1000px;
+}
+
+/*MAKE A SKIN OOCSS*/
+.btn-clean{
+    display: block;
+    cursor: pointer;
+    transition : background-color 0.3s ease;
+    color: rgba(0,0,0, 0.9);
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    border : 1px none black;
+    box-shadow: none;
+    padding: 8px 20px 2px 20px;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.btn-clean:hover{
+    background-color: rgba(0,0,0,0.6);
+    color: rgba(255,255,255, 0.9)
+}
+
+.about{
+    left : -800px;
+    bottom: 300px;
+}
+
+.recipe{
+    right : 800px;
+    bottom: 0px;
+}
+
+.info{
+    transition : color 0.5s ease;
+    transition : background-color 0.5s ease;
+    font-family: "BebasNeueBook";
+    position : absolute;
+    width: 300px;
+    background-color: rgba(0,0,0, 0.4);
+    color : rgba(255,255,255, 0.9);
+}
+
+/*
+.info:hover{
+    background-color: rgba(0,0,0, 0.8);;
+    color: white;
+}*/
+
+.info > h2{
+    padding: 0;
+    margin: 10px;
+}
+
+.info > p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.places{
+    background-color: transparent;
+    height: 800px;
+}
