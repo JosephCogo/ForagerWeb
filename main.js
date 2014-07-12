@@ -9,16 +9,26 @@ $( document ).ready( function(){
 
 		//scale the left movement by the content div width?
 
-		$(".about").css("left",  Math.min(0, $(window).scrollTop()*1.5-300));
+		$(".about").css("left",  Math.min(0, $(window).scrollTop()*1.5-500));
 
-		$(".recipe").css("right",  Math.min(0, $(window).scrollTop()*1.5-600));
+		//was 600
+		$(".recipe").css("right",  Math.min(0, $(window).scrollTop()*1.5-6000));
 
 		var right = $(window).scrollTop();
 
-		$(".background").css("left",   Math.max(0,right));
+		$(".background").css("left",   Math.max(0,right*2));
 		$(".background").css("top",   $(window).scrollTop());
 
-		console.log("-100px " + right + "px");
+		if($(window).scrollTop() > 500){
+			
+			$(".about").css("top",   $(window).scrollTop());
+		}
+
+		if($(window).scrollTop() > 1050){
+			
+			$(".drawing").css("top",   $(window).scrollTop() + 50);
+		}
+
 	});
 
 	var open = false;

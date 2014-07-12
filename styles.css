@@ -99,7 +99,7 @@ li{
 
 .about{
     left : -800px;
-    bottom: 300px;
+    top: 500px;
 }
 
 .recipe{
@@ -114,9 +114,19 @@ li{
     font-weight: 100;
     font-size: 15px;
     position : absolute;
-    width: 300px;
+    width: 500px;
     background-color: rgba(255,255,255, 0.7);
     color : rgba(0,0,0, 0.9);
+}
+
+.drawing{
+    position: absolute;
+    top : 1100px;
+    left: 500px;
+    width : 700px;
+    height: 400px;
+    background-image: url("figsdrawing.jpg");
+    background-size: cover;
 }
 
 /*
