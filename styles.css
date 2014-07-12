@@ -110,11 +110,13 @@ li{
 .info{
     transition : color 0.5s ease;
     transition : background-color 0.5s ease;
-    font-family: "BebasNeueBook";
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+    font-size: 15px;
     position : absolute;
     width: 300px;
-    background-color: rgba(0,0,0, 0.4);
-    color : rgba(255,255,255, 0.9);
+    background-color: rgba(255,255,255, 0.7);
+    color : rgba(0,0,0, 0.9);
 }
 
 /*
@@ -129,8 +131,8 @@ li{
 }
 
 .info > p{
-    font-size: 20px;
-    letter-spacing: 2px;
+    /*font-size: 20px;*/
+    /*letter-spacing: 2px;*/
     margin: 10px;
 }
 
