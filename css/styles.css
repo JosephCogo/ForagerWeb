@@ -84,9 +84,9 @@ a{
 }
 
 .artist-link:hover .artist-name:after{
- 	margin-left: 20px; 
- 	content: "+";
- 	font-weight : 500;
+	margin-left: 20px; 
+	content: "+";
+	font-weight : 500;
 }
 
 .artist-link:hover:after{
@@ -94,14 +94,14 @@ a{
 }
 
 .artist-name{
-  z-index: 1;
-  position: relative;
-  left: 20px; 
-  font-size: 35px;
-  color: white;
-  display: inline;
+	z-index: 1;
+	position: relative;
+	left: 20px; 
+	font-size: 35px;
+	color: white;
+	display: inline;
 
-  line-height: 138px;
+	line-height: 138px;
   /* Alternatively this, if you don't want to use the line height hack
   top: 50%;
 
@@ -139,8 +139,34 @@ a{
 }
 
 .artist-heading{
-  margin: 20px 0 0 20px; 
-  font-size: 35px;
-  color: black;
+	margin: 20px 0 0 20px; 
+	font-size: 35px;
+	color: black;
 }
 
+@media all and (max-width: 382px){
+	.content{
+		margin-top: 99px;
+	}
+
+	.title{
+		display: block;
+		font-family:  "anders";
+		font-size: 30px;
+		text-align: center; 
+	}
+}
+
+@media all and (max-width: 650px){
+.biography{
+	width: 100%;
+	display: block;
+}
+
+
+.tracks{
+	width: 100%;
+	display: block;
+}
+
+}
