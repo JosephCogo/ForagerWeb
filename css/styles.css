@@ -68,6 +68,7 @@ p{
 }
 
 .artist-link{
+	overflow: hidden;
 	cursor: pointer;
 	position: relative;
 	background-size: cover;
